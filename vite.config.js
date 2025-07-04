@@ -2,14 +2,14 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "detalles.html"),
-        nested: resolve(__dirname, "detalles/detalles.html"),
+        main: resolve(dirname, "index.html"),
+        favoritos: resolve(__dirname, "detalles/detalles.html"),
       },
     },
   },
