@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./src/images/icono.png" />
+    <title>Buscador de Razas</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🐶 Buscador de Razas</h1>
+      <a
+        href="/favoritos.html"
+        class="btn-favoritos"
+        style="margin-right: 10px; font-size: 1.1em"
+        >⭐ Ver Favoritos</a
+      >
+      <input type="text" id="search" placeholder="Buscar raza..." />
+      <select id="breed-group-filter">
+        <option value="">Todos los grupos</option>
+      </select>
+
+      <select id="sort-order">
+        <option value="az">Orden A-Z</option>
+        <option value="za">Orden Z-A</option>
+      </select>
+    </header>
+
+    <main id="dog-container"></main>
+
+    <footer>
+      <p>© 2025 Dog API App</p>
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
